@@ -188,7 +188,7 @@ class Reader(object):
                     assert calculate_md5(model_path) == model['md5sum'], corrupt_msg
                     LOGGER.info('Download complete.')
                 # elif calculate_md5(model_path) != model['md5sum']:
-                elif True:
+                elif False:
                     if not self.download_enabled:
                         raise FileNotFoundError("MD5 mismatch for %s and downloads disabled" % model_path)
                     LOGGER.warning(corrupt_msg)
